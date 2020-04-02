@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/ubuntudroid/FitnessTracker.png?branch=master)](https://travis-ci.org/ubuntudroid/FitnessTracker)
 
 FitnessTracker
 ==============
