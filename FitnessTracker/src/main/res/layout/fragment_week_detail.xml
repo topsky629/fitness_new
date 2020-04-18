@@ -1,0 +1,78 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="de.ubuntudroid.fitnesstracker.controller.fragments.WeekDetailFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <de.ubuntudroid.fitnesstracker.view.WeightWeekDataInputView
+            android:id="@+id/weight_text"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            app:desc="@string/week_data_input_weight"
+            app:hint="e.g. 127.8"
+            app:unit="lbs"
+            />
+
+        <de.ubuntudroid.fitnesstracker.view.WeekDataInputView
+            android:id="@+id/fat_fraction_text"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            app:desc="@string/week_data_input_fat"
+            app:hint="e.g. 27.4"
+            app:unit="%"
+            />
+
+        <de.ubuntudroid.fitnesstracker.view.WeekDataInputView
+            android:id="@+id/water_fraction_text"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            app:desc="@string/week_data_input_water"
+            app:hint="e.g. 49.2"
+            app:unit="%"
+            />
+
+        <de.ubuntudroid.fitnesstracker.view.WeekDataInputView
+            android:id="@+id/muscle_fraction_text"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            app:desc="@string/week_data_input_muscle"
+            app:hint="e.g. 31.3"
+            app:unit="%"
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/refresh_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:clickable="true"/>
+
+</FrameLayout>
+
+
+
+
+
